@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CodePen - Demo Flexbox 3</title>
+        <style>
+            body { padding: 2em; }
+
+            .headerContainer {
+                display: flex; 
+                background: yellowgreen;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            .footerContainer {
+                display: flex;  
+                background: yellowgreen;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            .mainContainer {
+                display: flex;
+                font-weight: bold;
+                text-align:start;
+            }
+
+            article {
+                padding: 10px;
+                background-color: whitesmoke;
+            }
+
+            .AsideBarItem { background: wheat; padding: 10px; }
+            .NavBarItem { background: silver; padding: 10px; }
+
+            .sideBarItem  { flex: 1 0 0; border: 0px solid green;}
+            .mainContentItem  { flex: 3 0px;}
+            .AsideBarItem { order: 2;}
+            .mainContentItem { order: 1;}
+            .NavBarItem { order: 3;}
+
+        </style>
+    </head>
+    <body>
+        <header class="headerContainer"><h1>HEADER - Website Layout Sample</h1></header>
+        <div class="mainContainer">
+            <section class="mainContentItem">
+                <article>
+                    <h2> Article</h2>
+
+                    <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter.
+                       Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed.
+                       PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health both gostropub hammock.</p>
+                </article>
+            </section>
+            <sideBar class="sideBarItem AsideBarItem"><div class="center"><p>Aside</p></div></sideBar>
+            <sideBar class="sideBarItem NavBarItem"><div class="center"><p>Nav</p></div></sideBar>
+        </div>
+        <footer class="footerContainer">Footer</footer>
+
+    </body>
+</html>
